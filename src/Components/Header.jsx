@@ -30,6 +30,7 @@ export default function Header({ handleScroll, currentPath }) {
     () => [
       { name: 'Home', id: 'home', path: '/home' },
       { name: 'Product', id: 'product', path: '/product' },
+      { name: 'Landing', id: 'landing', path: '/landing' },
       { name: 'Gallery', id: 'gallery', path: '/gallery' },
       { name: 'About us', id: 'about-us', path: '/about-us' },
       { name: 'Contact us', id: 'contact-us', path: '/contact-us' },

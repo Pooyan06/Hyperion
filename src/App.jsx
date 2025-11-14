@@ -1,12 +1,15 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import CustomCursor from './Components/CustomCursor';
+import Landing from './pages/Landing';
 
 // ✅ Lazy load صفحات (کد اسپلیتینگ)
 const AppLayout = lazy(() => import('./pages/AppLayout'));
 const Home = lazy(() => import('./pages/Home'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const Product = lazy(() => import('./pages/Product'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
 
 // ✅ Loader ساده و سبک
 function LoadingScreen() {
@@ -32,7 +35,10 @@ export default function App() {
             <Route index element={<Navigate replace to='home' />} />
             <Route path='home' element={<Home />} />
             <Route path='product' element={<Product />} />
+            <Route path='landing' element={<Landing />} />
             <Route path='gallery' element={<Gallery />} />
+            <Route path='about-us' element={<AboutUs />} />
+            <Route path='contact-us' element={<ContactUs />} />
           </Route>
         </Routes>
       </Suspense>

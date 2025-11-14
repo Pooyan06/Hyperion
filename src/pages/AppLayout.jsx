@@ -4,7 +4,10 @@ import Header from '../components/Header';
 
 const Home = lazy(() => import('./Home'));
 const Product = lazy(() => import('./Product'));
+const Landing = lazy(() => import('./Landing'));
 const Gallery = lazy(() => import('./Gallery'));
+const AboutUs = lazy(() => import('./AboutUs'));
+const ContactUs = lazy(() => import('./ContactUs'));
 
 function LoadingScreen() {
   return (
@@ -30,7 +33,10 @@ export default function AppLayout() {
   const sections = [
     { id: 'home', path: '/home', component: Home },
     { id: 'product', path: '/product', component: Product },
+    { id: 'landing', path: '/landing', component: Landing },
     { id: 'gallery', path: '/gallery', component: Gallery },
+    { id: 'about-us', path: '/about-us', component: AboutUs },
+    { id: 'contact-us', path: '/contact-us', component: ContactUs },
   ];
 
   const handleScrollToSection = (id, path) => {
@@ -107,7 +113,7 @@ export default function AppLayout() {
           key={id}
           id={id}
           ref={(el) => (sectionRefs.current[id] = el)}
-          className='min-h-screen snap-start scroll-mt-20'
+          className='min-h-screen snap-start scroll-mt-20 overflow-x-hidden'
         >
           <Suspense fallback={<LoadingScreen />}>
             <Component onLoad={() => markPageLoaded(id)} />
