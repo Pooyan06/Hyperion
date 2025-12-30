@@ -58,42 +58,42 @@ export default function Gallery() {
 
       {/* گرید محصولات */}
       <div className='grid w-full flex-1 auto-rows-fr grid-cols-2 gap-5 p-5 md:grid-cols-2 md:p-8 lg:grid-cols-3'>
-        <div className='animate-on-scroll from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:row-span-2 md:h-auto lg:row-span-2'>
+        <div className='animate-on-scroll from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:row-span-2 md:h-auto lg:row-span-2'>
           <img
             src='./images/1.webp'
             alt='product'
             className='h-full w-fit object-contain'
           />
         </div>
-        <div className='animate-on-scroll from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:h-auto'>
+        <div className='animate-on-scroll from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:h-auto'>
           <img
             src='./images/2.webp'
             alt='product'
             className='h-full w-fit object-contain'
           />
         </div>
-        <div className='animate-on-scroll from-right col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:row-span-2 md:h-auto lg:row-span-2'>
+        <div className='animate-on-scroll from-right col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:row-span-2 md:h-auto lg:row-span-2'>
           <img
             src='./images/3.webp'
             alt='product'
             className='h-full w-fit object-contain'
           />
         </div>
-        <div className='animate-on-scroll from-bottom col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:row-span-2 md:h-auto lg:row-span-2'>
+        <div className='animate-on-scroll from-bottom col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:row-span-2 md:h-auto lg:row-span-2'>
           <img
             src='./images/4.webp'
             alt='product'
             className='h-full w-fit object-contain'
           />
         </div>
-        <div className='animate-on-scroll from-bottom md:from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:h-auto'>
+        <div className='animate-on-scroll from-bottom md:from-left col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:h-auto'>
           <img
             src='./images/5.webp'
             alt='product'
             className='h-full w-fit object-contain'
           />
         </div>
-        <div className='animate-on-scroll from-bottom col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-black md:h-auto'>
+        <div className='animate-on-scroll from-bottom col-span-1 row-span-1 flex min-h-48 items-center justify-center rounded-lg bg-[#000205] md:h-auto'>
           <img
             src='./images/6.webp'
             alt='product'

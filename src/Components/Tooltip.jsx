@@ -33,7 +33,7 @@ export default function Tooltip({ hotspot, title, text, containerWidth }) {
       />
 
       {/* باکس tooltip */}
-      <div className='bg-opacity-80 max-w-xs rounded-md border-t-2 border-blue-500 bg-black px-4 py-2 text-white shadow-lg'>
+      <div className='bg-opacity-80 max-w-xs rounded-md border-t-2 border-blue-500 bg-[#000205] px-4 py-2 text-white shadow-lg'>
         <h3 className='mb-1 text-sm font-semibold'>{title}</h3>
         <p className='text-xs leading-snug text-gray-300'>{text}</p>
       </div>

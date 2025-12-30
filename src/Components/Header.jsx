@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header({ handleScroll, currentPath }) {
   const [locked, setLocked] = useState(false);

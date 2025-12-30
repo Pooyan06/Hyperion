@@ -141,7 +141,7 @@ export default function Product() {
       {/* ---------------- IMAGE SECTION ---------------- */}
       <div
         ref={imageRef}
-        className={`flex w-full flex-1 items-center justify-center bg-black p-4 sm:p-6 md:w-6/12 md:p-8 ${getLoadClasses(
+        className={`flex w-full flex-1 items-center justify-center bg-[#000205] p-4 sm:p-6 md:w-6/12 md:p-8 ${getLoadClasses(
           imageInView,
           'from-bottom',
           0

@@ -112,3 +112,58 @@ header.preload h1 {
   transition-delay: 200ms !important;
 }
 /* ... ادامه برای سایر تأخیرهای مورد نیاز (500, 650, 800, 950, ...) */
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: var(--lineLength, 1000);
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 2px #00f5ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 6px #5379ae);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px #00f5ff);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-drawLineGlow {
+  animation:
+    drawLine 0.8s ease-out forwards,
+    glowPulse 2s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
